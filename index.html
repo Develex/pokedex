@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit.css">
+    <link rel="stylesheet" href="./node_modules/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="uk-container">
+    <nav class="uk-navbar-container uk-navbar" uk-navbar="">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-navbar-item"><a href="#" id="link-pokemon">Pokemon</a></li>
+                <li class="uk-navbar-item"><a href="#" id="link-types">Types</a></li>
+                <li class="uk-navbar-item"><a href="#" id="link-moves">Moves</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-navbar-item">
+                    <form class="uk-search uk-search-default">
+                        <span uk-search-icon=class="uk-icon "></span>
+                        <label>
+                            <input class="uk-search-input" type="search" placeholder="">
+                        </label>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="pretty p-switch">
+        <input type="checkbox" id="sprites" name="sprites">
+        <div class="state">
+            <label>Sprites</label>
+        </div>
+    </div>
+
+    <div id="page-slider" class="uk-slider-container uk-slider" uk-slider="">
+        <ul class="uk-slider-items" style="transform: translate3d(0px, 0px, 0px);">
+            <li class="uk-width-1-1 uk-active" uk-slider-item="0" tabindex="-1">
+                <form type="GET" class="">
+                    <nav class="uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar="">
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <label class="uk-form-label" for="type1">Type 1</label>
+                                    <select id="type1" class="uk-select" name="type1">
+                                        <option value="0">None</option>
+                                        <option value="1">Normal</option>
+                                        <option value="2">Fighting</option>
+                                        <option value="3">Flying</option>
+                                        <option value="4">Poison</option>
+                                        <option value="5">Ground</option>
+                                        <option value="6">Rock</option>
+                                        <option value="7">Bug</option>
+                                        <option value="8">Ghost</option>
+                                        <option value="9">Steel</option>
+                                        <option value="10">Fire</option>
+                                        <option value="11">Water</option>
+                                        <option value="12">Grass</option>
+                                        <option value="13">Electric</option>
+                                        <option value="14">Psychic</option>
+                                        <option value="15">Ice</option>
+                                        <option value="16">Dragon</option>
+                                        <option value="17">Dark</option>
+                                        <option value="18">Fairy</option>
+                                        <option value="10001">Unknown</option>
+                                        <option value="10002">Shadow</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </form>
+                <table class="uk-table uk-table-striped uk-table-justify uk-table-middle">
+                    <thead class="uk-table">
+                    <tr>
+                        <td><b>ID</b></td>
+                        <td></td>
+                        <td><b>Name</b></td>
+                        <td><b>Primary type</b></td>
+                        <td><b>Secondary type</b></td>
+                    </tr>
+                    </thead>
+                    <tbody id="pokemon-table"><tr><td>56</td>
+                    </tbody>
+                </table>
+            </li>
+            <li class="uk-width-1-1" uk-slider-item="1" tabindex="-1">
+                <button class="uk-button">Temp</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>
