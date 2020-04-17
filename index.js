@@ -1,3 +1,9 @@
+//Github Pages
+const ghpages = require('gh-pages');
+ghpages.publish("dist", [], function (err) {
+});
+
+
 // Navigation buttons
 pageSlider = document.getElementById('page-slider');
 document.getElementById('link-pokemon').addEventListener("click", function () {
