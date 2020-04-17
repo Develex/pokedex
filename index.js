@@ -21,6 +21,7 @@ const pokemonTable = document.getElementById('pokemon-table');
 //Pokemon Navigation Buttons
 const spriteCheckbox = document.getElementById('sprites');
 const type1Select = document.getElementById('type1');
+spriteCheckbox.addEventListener("change", request);
 type1Select.addEventListener("change", request);
 
 function request() {
