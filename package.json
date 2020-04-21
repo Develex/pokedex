@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Develex/pokedex#readme",
   "dependencies": {
-    "http-server": "^0.12.1",
     "pokeapi-js-wrapper": "^1.1.2",
     "pretty-checkbox": "^3.0.3",
     "uikit": "^3.4.1"
