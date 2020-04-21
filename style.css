@@ -86,3 +86,7 @@
     background: #5A47AF;
 }
 
+/* Override switch */
+.pretty.p-switch .state:before {
+    top: calc((0% - (100% - 1em)) - 12%);
+}

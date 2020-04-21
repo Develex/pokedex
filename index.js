@@ -1,9 +1,3 @@
-//Github Pages
-const ghpages = require('gh-pages');
-ghpages.publish("dist", [], function (err) {
-});
-
-
 // Navigation buttons
 pageSlider = document.getElementById('page-slider');
 document.getElementById('link-pokemon').addEventListener("click", function () {
@@ -80,6 +74,8 @@ function createPokemonRow(id, name, type1, type2, spriteUrl) {
     td[2].innerHTML = name;
     td[3].innerHTML = type1;
     td[4].innerHTML = type2;
+
+    td[2].id = `link-${name}`;
 
     if (type1 !== '') {
         td[3].classList.add("type-base", "type-" + type1);
